@@ -1,80 +1,47 @@
-DEV BY Himmler Discord <@1131256234440392817>
-# lookip-Osint
-
-🕵️‍♂️🔍 Outil de Recherche IP
-
+# 🕵️‍♂️🔍 Tool de Recherche IP
 Description :
-Le lookip Tool est un script Python simple et efficace permettant de rechercher des informations détaillées
-sur une adresse IP donnée. En interrogeant deux services API publics, IPinfo et ip-api, cet outil fournit des détails tels que la localisation, 
-l'organisation, le FAI (Fournisseur d'Accès Internet), et bien plus encore.
+Le lookip Tool est un script Python simple et efficace permettant de rechercher des informations détaillées sur une adresse IP donnée. En interrogeant deux services API publics, IPinfo et ip-api, cet outil fournit des détails tels que la localisation, l'organisation, le FAI (Fournisseur d'Accès Internet), et bien plus encore.
 
-📋 Prérequis
+# 📋 Prérequis
+
 Assurez-vous d'avoir Python installé sur votre machine. Le script utilise la bibliothèque requests, que vous pouvez installer via pip si elle n'est pas déjà présente :
 
 ```pip install requests```
-
-🛠️ Utilisation
+# 🛠️ Utilisation
 Ouvrez un terminal.
-Exécutez le script avec l'adresse IP que vous souhaitez rechercher en argument :
-
-```python lookip.py <ADRESSE_IP>```
-
-Par exemple :
-
-```python lookip.py 8.8.8.8```
-
-📊 Exemple de Sortie
+Exécutez le script :
+```python lookip.py```
+Entrez l'adresse IP que vous souhaitez rechercher lorsqu'on vous le demande.
+# 📊 Exemple de sortie
 
 Informations pour l'adresse IP : 8.8.8.8
 
-Données IPinfo :
-
-  IP: 8.8.8.8
-  
-  Nom d'hôte: dns.google
-  
-  Ville: Mountain View
-  
-  Région: California
-  
-  Pays: US
-  
-  Localisation: 37.3860,-122.0840
-  
-  Organisation: AS15169 Google LLC
-  
-  Code postal: 94035
-  
+  Données IPinfo :
+  IP : 8.8.8.8
+  Nom d'hôte : dns.google
+  Ville : Mountain View
+  Région : Californie
+  Pays : États-Unis
+  Localisation : 37.3860,-122.0840
+  Organisation : AS15169 Google LLC
+  Code postal : 94035
   Fuseau horaire: America/Los_Angeles
 
 Données ip-api :
-
-  Pays: United States
-  
-  Région: California
-  
-  Ville: Mountain View
-  
-  Code postal: 94035
-  
+  Pays : États-Unis
+  Région : Californie
+  Ville : Mountain View
+  Code postal : 94035
   Latitude: 37.386
-  
   Longitude: -122.0838
-
-  FAI: Google LLC
-  
-  Organisation: Google LLC
-  
-  AS: AS15169 Google LLC
-  
-  DNS inversé: dns.google
-  
-  Mobile: False
-  
-  Proxy: False
+  FAI : Google LLC
+  Organisation : Google LLC
+  AS : AS15169 Google LLC
+  DNS inversé : dns.google
+  Mobile : Faux
+  Proxy : Faux
 
 Himmler / discord.gg/searchhub
-
 
 🧩 Fonctionnalités
 
@@ -89,7 +56,8 @@ Himmler / discord.gg/searchhub
 lookip.py : Le script principal pour effectuer la recherche IP.
 
 🤝 Contributions
+
 Les contributions sont les bienvenues ! Si vous avez des idées d'améliorations ou des corrections, veuillez soumettre une pull request.
 
-📜 License : 
+📜 Licence
 Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus de détails.
