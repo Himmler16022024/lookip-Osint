@@ -55,11 +55,17 @@ Données ip-api :
 Himmler / discord.gg/searchhub
 
 🧩 Fonctionnalités
+
 🔍 Recherche d'informations détaillées sur une adresse IP.
+
 🌐 Agrégation des données provenant de deux API (IPinfo et ip-api).
+
 📋 Affichage clair et structuré des résultats dans le terminal avec un message personnalisé à chaque résultat.
+
 📂 Structure du Projet
+
 lookip.py : Le script principal pour effectuer la recherche IP.
+
 🤝 Contributions
 Les contributions sont les bienvenues ! Si vous avez des idées d'améliorations ou des corrections, veuillez soumettre une pull request.
 
