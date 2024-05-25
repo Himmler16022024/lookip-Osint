@@ -1,6 +1,6 @@
 # 🕵️‍♂️🔍 Tool de Recherche IP
 Description :
-Le lookip Tool est un script Python simple et efficace permettant de rechercher des informations détaillées sur une adresse IP donnée. En interrogeant deux services API publics, IPinfo et ip-api, cet outil fournit des détails tels que la localisation, l'organisation, le FAI (Fournisseur d'Accès Internet), et bien plus encore.
+Le lookip Tool est codez en Python avec une utilisation simple et efficace permettant de rechercher des informations détaillées sur une adresse IP donnée. En envoyant deux requetes au 2 API publics, IPinfo et ip-api, ce tool donne des détails tels que la localisation, l'organisation, le FAI (Fournisseur d'Accès Internet), et bien plus encore.
 
 # 📋 Prérequis
 
