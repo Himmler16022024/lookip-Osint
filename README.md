@@ -17,28 +17,49 @@ Entrez l'adresse IP que vous souhaitez rechercher lorsqu'on vous le demande.
 Informations pour l'adresse IP : 8.8.8.8
 
   Données IPinfo :
+  
   IP : 8.8.8.8
+  
   Nom d'hôte : dns.google
+  
   Ville : Mountain View
+  
   Région : Californie
+  
   Pays : États-Unis
+  
   Localisation : 37.3860,-122.0840
+  
   Organisation : AS15169 Google LLC
+  
   Code postal : 94035
+  
   Fuseau horaire: America/Los_Angeles
-
+  
 Données ip-api :
+
   Pays : États-Unis
+  
   Région : Californie
+  
   Ville : Mountain View
+  
   Code postal : 94035
+  
   Latitude: 37.386
+  
   Longitude: -122.0838
+  
   FAI : Google LLC
+  
   Organisation : Google LLC
+  
   AS : AS15169 Google LLC
+  
   DNS inversé : dns.google
+  
   Mobile : Faux
+  
   Proxy : Faux
 
 Himmler / discord.gg/searchhub
