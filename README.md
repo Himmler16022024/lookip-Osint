@@ -9,9 +9,13 @@ Assurez-vous d'avoir Python installé sur votre machine. Le script utilise la bi
 ```pip install requests```
 # 🛠️ Utilisation
 Ouvrez un terminal.
+
 Exécutez le script :
+
 ```python lookip.py```
+
 Entrez l'adresse IP que vous souhaitez rechercher lorsqu'on vous le demande.
+
 # 📊 Exemple de sortie
 
 Informations pour l'adresse IP : 8.8.8.8
@@ -81,4 +85,5 @@ lookip.py : Le script principal pour effectuer la recherche IP.
 Les contributions sont les bienvenues ! Si vous avez des idées d'améliorations ou des corrections, veuillez soumettre une pull request.
 
 📜 Licence
+
 Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus de détails.
