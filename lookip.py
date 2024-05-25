@@ -1,18 +1,15 @@
 import requests
-import sys
+import os
 
 def ip_lookup(ip_address):
-    # API IPinfo
     ipinfo_url = f"https://ipinfo.io/{ip_address}/json"
     ipinfo_response = requests.get(ipinfo_url)
     ipinfo_data = ipinfo_response.json()
 
-    # API ip-api
     ipapi_url = f"http://ip-api.com/json/{ip_address}"
     ipapi_response = requests.get(ipapi_url)
     ipapi_data = ipapi_response.json()
 
-    # Agrégation des informations des deux sources
     result = {
         "Adresse IP": ip_address,
         "IPinfo": {
@@ -45,26 +42,60 @@ def ip_lookup(ip_address):
     return result
 
 def print_result(result):
-    print(f"Informations pour l'adresse IP : {result['Adresse IP']}\n")
+    separator = "=" * 50
+    header = f"""
+\033[35m██╗      ██████╗  ██████╗ ██╗  ██╗██╗██████╗ 
+██║     ██╔═══██╗██╔═══██╗██║ ██╔╝██║██╔══██╗
+██║     ██║   ██║██║   ██║█████╔╝ ██║██████╔╝
+██║     ██║   ██║██║   ██║██╔═██╗ ██║██╔═══╝ 
+███████╗╚██████╔╝╚██████╔╝██║  ██╗██║██║     
+╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝     
+\033[0m    """
+    print(header)
+    print(separator)
+    print(f"Informations pour l'adresse IP : {result['Adresse IP']}")
+    print(separator)
     
-    print("Données IPinfo :")
+    print("🔍 Données IPinfo :")
     for key, value in result['IPinfo'].items():
         print(f"  {key}: {value}")
     
-    print("\nDonnées ip-api :")
+    print(separator)
+    print("🌐 Données ip-api :")
     for key, value in result['ip-api'].items():
         print(f"  {key}: {value}")
     
-    # Ajout du message personnalisé en violet
     violet = "\033[35m"
     reset = "\033[0m"
-    print(f"\n{violet}Himmler ・ discord.gg/searchhub{reset}")
+    print(separator)
+    print(f"\n{violet}Himmler / discord.gg/searchhub{reset}")
+    print(separator)
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("---> python lookip.py <ADRESSE_IP>")
-        sys.exit(1)
+    intro = """
+\033[35m██╗      ██████╗  ██████╗ ██╗  ██╗██╗██████╗ 
+██║     ██╔═══██╗██╔═══██╗██║ ██╔╝██║██╔══██╗
+██║     ██║   ██║██║   ██║█████╔╝ ██║██████╔╝
+██║     ██║   ██║██║   ██║██╔═██╗ ██║██╔═══╝ 
+███████╗╚██████╔╝╚██████╔╝██║  ██╗██║██║     
+╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝     
+\033[0m    """
+    print(intro)
+    print("Bienvenue dans le tool lookip !")
+    print("Veuillez entrer l'adresse IP cible pour commencer.")
+    print("=" * 50)
+    
+    while True:
+        ip_address = input("Entrez l'adresse IP : ")
 
-    ip_address = sys.argv[1]
-    info = ip_lookup(ip_address)
-    print_result(info)
+        if not ip_address.strip():
+            print("L'adresse IP ne peut pas être vide. Veuillez entrer une adresse IP valide.")
+        else:
+            os.system('cls' if os.name == 'nt' else 'clear')
+            info = ip_lookup(ip_address)
+            print_result(info)
+        
+        repeat = input("Voulez-vous rechercher une autre adresse IP ? (o/n) : ").strip().lower()
+        if repeat != 'o':
+            print("Merci d'avoir utilisé lookip. Au revoir!")
+            break
