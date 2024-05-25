@@ -64,7 +64,7 @@ Données ip-api :
 
 Himmler / discord.gg/searchhub
 
-🧩 Fonctionnalités
+# 🧩 Fonctionnalités
 
 🔍 Recherche d'informations détaillées sur une adresse IP.
 
