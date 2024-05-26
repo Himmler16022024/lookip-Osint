@@ -5,7 +5,8 @@ En envoyant deux requêtes aux deux API publics, IPinfo et ip-api, ce tool donne
 
 l'organisation, le FAI (Fournisseur d'Accès Internet), et bien plus encore.
 
-#📋 Prérequis
+#📋Prérequis
+
 Assurez-vous d'avoir Python installé sur votre machine. Le script utilise la bibliothèque requests, que vous pouvez installer via pip si elle n'est pas déjà présente :
 ```
 pip install requests
