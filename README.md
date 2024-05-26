@@ -63,7 +63,7 @@ Informations pour l'adresse IP : 8.8.8.8
 Himmler / discord.gg/searchhub
 ```
 
-🧩 Fonctionnalités
+# 🧩 Fonctionnalités
 
 🔍 Recherche d'informations détaillées sur une adresse IP.
 
